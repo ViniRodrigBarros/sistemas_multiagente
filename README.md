@@ -5,7 +5,7 @@ AutoDeployMA — Sistema Multiagente para Automação de Testes e Publicação d
 Vinicius Rodrigues Barros
 
 
-##💡 Ideia Principal
+## 💡 Ideia Principal
 O projeto propõe a criação de um sistema automatizado que realiza testes e publicação de aplicativos Flutter na Google Play Store. A ideia é que, sempre que o código do app for atualizado, agentes inteligentes verifiquem se tudo está funcionando corretamente através de testes automatizados e, caso não haja erros, façam o upload do aplicativo diretamente para a loja. Assim, o processo de entrega se torna mais ágil, seguro e eficiente.
 
 ## 🎯 Objetivos
