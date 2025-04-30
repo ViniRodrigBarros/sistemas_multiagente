@@ -19,14 +19,14 @@ Diminuir erros humanos e acelerar o ciclo de desenvolvimento e entrega.
 
 Integrar práticas de DevOps e CI/CD com um modelo baseado em sistemas multiagente.
 
-##👥 Público-Alvo
+## 👥 Público-Alvo
 Desenvolvedores de aplicativos Flutter que desejam automatizar seu processo de entrega contínua.
 
 Equipes de software com foco em qualidade, produtividade e integração contínua.
 
 Startups e empresas que lançam atualizações frequentes de seus apps.
 
-##🤖 Agentes Envolvidos
+## 🤖 Agentes Envolvidos
 Agente de Teste: Executa os testes unitários do projeto Flutter e valida os resultados.
 
 Agente de Decisão: Avalia os resultados dos testes e determina se a build está apta para ser publicada.
