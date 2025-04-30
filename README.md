@@ -1,15 +1,14 @@
-Nome do Projeto
+##Nome do Projeto
 AutoDeployMA — Sistema Multiagente para Automação de Testes e Publicação de Aplicativos Flutter
 
-👨‍🎓 Integrantes
+##👨‍🎓 Integrantes
 Vinicius Rodrigues Barros
 
-[Preencher os demais nomes conforme os participantes]
 
-💡 Ideia Principal
+##💡 Ideia Principal
 O projeto propõe a criação de um sistema automatizado que realiza testes e publicação de aplicativos Flutter na Google Play Store. A ideia é que, sempre que o código do app for atualizado, agentes inteligentes verifiquem se tudo está funcionando corretamente através de testes automatizados e, caso não haja erros, façam o upload do aplicativo diretamente para a loja. Assim, o processo de entrega se torna mais ágil, seguro e eficiente.
 
-🎯 Objetivos
+##🎯 Objetivos
 Automatizar o processo de testes unitários de projetos Flutter.
 
 Garantir que apenas versões testadas e estáveis sejam publicadas na Play Store.
@@ -20,14 +19,14 @@ Diminuir erros humanos e acelerar o ciclo de desenvolvimento e entrega.
 
 Integrar práticas de DevOps e CI/CD com um modelo baseado em sistemas multiagente.
 
-👥 Público-Alvo
+##👥 Público-Alvo
 Desenvolvedores de aplicativos Flutter que desejam automatizar seu processo de entrega contínua.
 
 Equipes de software com foco em qualidade, produtividade e integração contínua.
 
 Startups e empresas que lançam atualizações frequentes de seus apps.
 
-🤖 Agentes Envolvidos
+##🤖 Agentes Envolvidos
 Agente de Teste: Executa os testes unitários do projeto Flutter e valida os resultados.
 
 Agente de Decisão: Avalia os resultados dos testes e determina se a build está apta para ser publicada.
@@ -36,7 +35,7 @@ Agente de Deploy: Realiza a assinatura e o upload do aplicativo para a Google Pl
 
 Agente de Monitoramento (opcional): Acompanha logs, falhas e status da publicação, gerando alertas se necessário.
 
-🧱 Tecnologias Pretendidas
+##🧱 Tecnologias Pretendidas
 Flutter/Dart: Para o desenvolvimento do aplicativo principal. É a tecnologia-alvo do processo de testes e deploy.
 
 Python: Usado para orquestrar os agentes, por sua simplicidade, integração com bibliotecas de automação e suporte a scripts.
