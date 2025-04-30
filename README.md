@@ -1,35 +1,57 @@
-# Nome do Projeto
-> Um nome provisório que resuma bem a ideia. Seja criativo, mas claro!
+Nome do Projeto
+AutoDeployMA — Sistema Multiagente para Automação de Testes e Publicação de Aplicativos Flutter
 
-## 👨‍🎓 Integrantes
-- Nome do Estudante 1
-- Nome do Estudante 2
-- ...
+👨‍🎓 Integrantes
+Vinicius Rodrigues Barros
 
-## 💡 Ideia Principal
-Descreva em poucas linhas o que o projeto propõe fazer. 
-Pense como se estivesse explicando para alguém fora da área de tecnologia.
+[Preencher os demais nomes conforme os participantes]
 
-## 🎯 Objetivos
-- Liste de forma clara o que o sistema pretende resolver ou melhorar.
-- Pode usar bullets ou parágrafos curtos.
+💡 Ideia Principal
+O projeto propõe a criação de um sistema automatizado que realiza testes e publicação de aplicativos Flutter na Google Play Store. A ideia é que, sempre que o código do app for atualizado, agentes inteligentes verifiquem se tudo está funcionando corretamente através de testes automatizados e, caso não haja erros, façam o upload do aplicativo diretamente para a loja. Assim, o processo de entrega se torna mais ágil, seguro e eficiente.
 
-## 👥 Público-Alvo
-Quem se beneficia com esse projeto? Um setor específico? Um tipo de usuário?
+🎯 Objetivos
+Automatizar o processo de testes unitários de projetos Flutter.
 
-## 🤖 Agentes Envolvidos
-Liste os agentes que existirão no sistema e suas funções.
-Exemplo:
-- Agente A: coleta dados
-- Agente B: toma decisões
-- Agente C: executa ações no ambiente
+Garantir que apenas versões testadas e estáveis sejam publicadas na Play Store.
 
-## 🧱 Tecnologias Pretendidas
-- Linguagem de programação
-- Bibliotecas e frameworks
-- Ferramentas para teste, simulação, visualização, etc.
+Reduzir a intervenção manual no processo de deploy.
 
-> Justifique, sempre que possível, **por que escolheu cada ferramenta**.
+Diminuir erros humanos e acelerar o ciclo de desenvolvimento e entrega.
+
+Integrar práticas de DevOps e CI/CD com um modelo baseado em sistemas multiagente.
+
+👥 Público-Alvo
+Desenvolvedores de aplicativos Flutter que desejam automatizar seu processo de entrega contínua.
+
+Equipes de software com foco em qualidade, produtividade e integração contínua.
+
+Startups e empresas que lançam atualizações frequentes de seus apps.
+
+🤖 Agentes Envolvidos
+Agente de Teste: Executa os testes unitários do projeto Flutter e valida os resultados.
+
+Agente de Decisão: Avalia os resultados dos testes e determina se a build está apta para ser publicada.
+
+Agente de Deploy: Realiza a assinatura e o upload do aplicativo para a Google Play Store automaticamente, caso os testes sejam aprovados.
+
+Agente de Monitoramento (opcional): Acompanha logs, falhas e status da publicação, gerando alertas se necessário.
+
+🧱 Tecnologias Pretendidas
+Flutter/Dart: Para o desenvolvimento do aplicativo principal. É a tecnologia-alvo do processo de testes e deploy.
+
+Python: Usado para orquestrar os agentes, por sua simplicidade, integração com bibliotecas de automação e suporte a scripts.
+
+unittest / integration_test (Flutter): Para testes unitários e de integração.
+
+GitHub Actions / GitLab CI / Jenkins (opcional): Para integração contínua, caso o projeto evolua para uso com ferramentas CI.
+
+Google Play Developer API: Para automação do envio do bundle .aab à Google Play.
+
+Gradle: Para build e assinatura do app.
+
+Kivy / Tkinter (opcional): Para interface gráfica do script, caso desejem uma UI para o sistema de automação.
+
+A escolha de Python se justifica pela sua alta produtividade, facilidade de leitura e ampla disponibilidade de bibliotecas de automação. O Flutter é o alvo da automação, por isso o uso dessas ferramentas específicas se alinha ao ecossistema do projeto.
 
 ## 📦 Entradas e Saídas Esperadas
 **Entradas:**
