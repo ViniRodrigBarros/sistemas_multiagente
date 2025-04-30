@@ -1,14 +1,14 @@
-##Nome do Projeto
+## Nome do Projeto
 AutoDeployMA — Sistema Multiagente para Automação de Testes e Publicação de Aplicativos Flutter
 
-##👨‍🎓 Integrantes
+## 👨‍🎓 Integrantes
 Vinicius Rodrigues Barros
 
 
 ##💡 Ideia Principal
 O projeto propõe a criação de um sistema automatizado que realiza testes e publicação de aplicativos Flutter na Google Play Store. A ideia é que, sempre que o código do app for atualizado, agentes inteligentes verifiquem se tudo está funcionando corretamente através de testes automatizados e, caso não haja erros, façam o upload do aplicativo diretamente para a loja. Assim, o processo de entrega se torna mais ágil, seguro e eficiente.
 
-##🎯 Objetivos
+## 🎯 Objetivos
 Automatizar o processo de testes unitários de projetos Flutter.
 
 Garantir que apenas versões testadas e estáveis sejam publicadas na Play Store.
@@ -35,7 +35,7 @@ Agente de Deploy: Realiza a assinatura e o upload do aplicativo para a Google Pl
 
 Agente de Monitoramento (opcional): Acompanha logs, falhas e status da publicação, gerando alertas se necessário.
 
-##🧱 Tecnologias Pretendidas
+## 🧱 Tecnologias Pretendidas
 Flutter/Dart: Para o desenvolvimento do aplicativo principal. É a tecnologia-alvo do processo de testes e deploy.
 
 Python: Usado para orquestrar os agentes, por sua simplicidade, integração com bibliotecas de automação e suporte a scripts.
