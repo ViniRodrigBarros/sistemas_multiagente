@@ -48,11 +48,11 @@ def ask_user(prompt):
             print("Por favor, responda com 's' para sim ou 'n' para não.")
 
 FLAVOR_PACKAGE_MAP = {
-    "rest": "com.sttp.neat_3",
+    "prod": "com.autodeploy.ma",
 }
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--flavor", required=True, help="Nome do flavor (ex: dev, rest, prod)")
+parser.add_argument("--flavor", required=True, help="Nome do flavor (ex: dev, prod)")
 args = parser.parse_args()
 
 FLAVOR = args.flavor
