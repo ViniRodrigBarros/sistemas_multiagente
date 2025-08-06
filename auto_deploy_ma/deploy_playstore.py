@@ -1,11 +1,54 @@
 import os
 import argparse
+import subprocess
+import sys
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload 
 
+# Passo 1: Rode - pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+# Passo 2: Rode - python deploy_playstore.py --flavor <nome do flavor> 
+
+def run_tests():
+    """Executa os testes do projeto"""
+    print("🧪 Executando testes...")
+    try:
+        result = subprocess.run(
+            ["flutter", "test"],
+            capture_output=True,
+            text=True,
+            cwd=os.getcwd()
+        )
+        
+        if result.returncode == 0:
+            print("✅ Todos os testes passaram!")
+            print("\n📊 Resumo dos testes:")
+            print(result.stdout)
+            return True
+        else:
+            print("❌ Alguns testes falharam!")
+            print("\n📊 Resumo dos testes:")
+            print(result.stdout)
+            print("\n❌ Erros:")
+            print(result.stderr)
+            return False
+    except Exception as e:
+        print(f"❌ Erro ao executar testes: {e}")
+        return False
+
+def ask_user(prompt):
+    """Pergunta ao usuário e retorna True para 'sim' ou 's', False para 'não' ou 'n'"""
+    while True:
+        response = input(f"{prompt} (s/n): ").lower().strip()
+        if response in ['s', 'sim', 'y', 'yes']:
+            return True
+        elif response in ['n', 'não', 'nao', 'no']:
+            return False
+        else:
+            print("Por favor, responda com 's' para sim ou 'n' para não.")
+
 FLAVOR_PACKAGE_MAP = {
-    "rest": "com.application.ifpb",
+    "rest": "com.sttp.neat_3",
 }
 
 parser = argparse.ArgumentParser()
@@ -23,7 +66,25 @@ ENTRY_POINT = f"lib/main.dart"
 AAB_PATH = f"build/app/outputs/bundle/{FLAVOR}Release/app-{FLAVOR}-release.aab"
 CREDENTIALS_PATH = "google_play_service.json"
 
-# === 1. Gerar App Bundle ===
+print(f"🚀 Script de deploy para flavor: {FLAVOR}")
+print("=" * 50)
+
+# === 0. Perguntar se quer rodar os testes ===
+if ask_user("Deseja executar os testes antes de publicar?"):
+    tests_passed = run_tests()
+    if not tests_passed:
+        print("\n❌ Testes falharam! Deseja continuar mesmo assim?")
+        if not ask_user("Continuar com o deploy?"):
+            print("🚫 Deploy cancelado pelo usuário.")
+            sys.exit(0)
+    print("\n" + "=" * 50)
+
+# === 1. Perguntar se quer publicar ===
+if not ask_user("Deseja prosseguir com a publicação na Play Store?"):
+    print("🚫 Deploy cancelado pelo usuário.")
+    sys.exit(0)
+
+print("\n" + "=" * 50)
 print(f"🔨 Gerando App Bundle para flavor '{FLAVOR}'...")
 build_command = f"flutter build appbundle --flavor {FLAVOR} -t {ENTRY_POINT}"
 os.system(build_command)

@@ -16,8 +16,6 @@ class AppModule extends Module {
   void routes(RouteManager r) {
     super.routes(r);
 
-    r
-      ..child('/', child: (context) => const LoginPage())
-      ..child(HomePage.route, child: (context) => const HomePage());
+    r.child('/', child: (context) => const TicTacToe());
   }
 }
