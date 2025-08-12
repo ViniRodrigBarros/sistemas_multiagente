@@ -84,4 +84,4 @@ Checklist Final
  Credenciais da Google Play API configuradas
  Dependências Python instaladas
  Script executado com sucesso
-Posso inserir este passo a passo no seu README.md?
+
