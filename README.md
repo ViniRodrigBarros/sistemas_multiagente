@@ -72,7 +72,7 @@ No terminal, execute:
 Ou, se não houver requirements.txt:
 
 4. Executar o Script de Autodeploy
-No terminal, execute:
+No terminal, execute:  python deploy_playstore.py --flavor <nome do flavor> 
 
 Siga as instruções do script (informe caminhos, track, etc. se solicitado).
 
