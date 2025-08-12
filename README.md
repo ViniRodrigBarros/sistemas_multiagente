@@ -52,46 +52,37 @@ Kivy / Tkinter (opcional): Para interface gráfica do script, caso desejem uma U
 
 A escolha de Python se justifica pela sua alta produtividade, facilidade de leitura e ampla disponibilidade de bibliotecas de automação. O Flutter é o alvo da automação, por isso o uso dessas ferramentas específicas se alinha ao ecossistema do projeto.
 
-## 📦 Entradas e Saídas Esperadas
-**Entradas:**
-- Quais dados o sistema recebe?
+## Como Utilizar
 
-**Saídas:**
-- Quais ações ou informações ele gera?
+Passo a Passo: Autodeploy na Google Play (usando google-play-service.json)
+1. Pré-requisitos
+Python 3.7+ instalado.
+Ferramentas do Flutter instaladas.
+Conta no Google Play Console e acesso ao projeto.
+2. Obter o arquivo de credenciais (google-play-service.json)
+Acesse o Google Cloud Console.
+Crie um projeto ou selecione o existente.
+Ative a API Google Play Developer.
+Crie uma conta de serviço e gere o arquivo de credenciais JSON.
+Dê permissão à conta de serviço no Google Play Console (Configurações > Acesso à API).
+Baixe o arquivo (ex: google-play-service.json) e coloque no mesmo diretorio em que se encontra deploy_playstore.py
+3. Instalação das Dependências
+No terminal, execute:
 
-## 🔁 Interação entre os Agentes
-Descreva como os agentes vão se comunicar ou se coordenar.
-Pode ser uma descrição textual ou um fluxograma em breve.
+Ou, se não houver requirements.txt:
 
-## 🗂️ Organização e Planejamento do Projeto
-O progresso deste projeto será monitorado através do **GitHub Projects**.
+4. Executar o Script de Autodeploy
+No terminal, execute:
 
-> Acesse a aba "Projects" do repositório para acompanhar:
-- Tarefas pendentes
-- Tarefas em andamento
-- Tarefas concluídas
+Siga as instruções do script (informe caminhos, track, etc. se solicitado).
 
-Cada integrante deve ser responsável por pelo menos uma tarefa no quadro.
-Use etiquetas (labels) e comentários para detalhar o andamento e as decisões.
-
-## 📌 Status Inicial do Projeto
-- [ ] Ideia discutida e validada com o professor
-- [ ] Estrutura básica do repositório criada
-- [ ] Quadro no GitHub Projects criado
-- [ ] Primeiras tarefas definidas e atribuídas
-
-## 📄 Documentação Futura
-Este repositório poderá incluir:
-- Diagramas de arquitetura
-- Relatórios parciais de progresso
-- Scripts de testes ou simulações
-- Resultados e conclusões finais
-
-## 👨‍🏫 Acompanhamento pelo Professor
-Para que o professor possa acompanhar e orientar o andamento do projeto, **adicione o usuário `igorbarcosta` como colaborador do repositório.**
-
-### Como fazer:
-1. Vá até a aba **"Settings"** do seu repositório.
-2. Clique em **"Collaborators"** no menu lateral.
-3. Digite o nome de usuário: `igorbarcosta`
-4. Clique em **"Add collaborator"** e confirme.
+6. Verificação
+Confira no Google Play Console se o upload foi realizado.
+Verifique se o app está na track correta (internal, beta, production).
+Checklist Final
+ google-play-service.json presente e correto
+ APK/AAB gerado
+ Credenciais da Google Play API configuradas
+ Dependências Python instaladas
+ Script executado com sucesso
+Posso inserir este passo a passo no seu README.md?
