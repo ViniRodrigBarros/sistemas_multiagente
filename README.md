@@ -68,15 +68,14 @@ Dê permissão à conta de serviço no Google Play Console (Configurações > Ac
 Baixe o arquivo (ex: google-play-service.json) e coloque no mesmo diretorio em que se encontra deploy_playstore.py
 3. Instalação das Dependências
 No terminal, execute:
-
-Ou, se não houver requirements.txt:
+pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
 4. Executar o Script de Autodeploy
 No terminal, execute:  python deploy_playstore.py --flavor <nome do flavor> 
 
 Siga as instruções do script (informe caminhos, track, etc. se solicitado).
 
-6. Verificação
+5. Verificação
 Confira no Google Play Console se o upload foi realizado.
 Verifique se o app está na track correta (internal, beta, production).
 Checklist Final
